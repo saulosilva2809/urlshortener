@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: urlshortener
+  datasource:
+    url: jdbc:postgresql://localhost:5433/urlshortener
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

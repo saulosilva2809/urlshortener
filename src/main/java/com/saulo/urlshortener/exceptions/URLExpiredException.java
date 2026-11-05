@@ -1,0 +1,11 @@
+package com.saulo.urlshortener.exceptions;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+@ResponseStatus(HttpStatus.NOT_FOUND)
+public class URLExpiredException extends RuntimeException {
+    public URLExpiredException() {
+        super("URL expirada!");
+    }
+}
